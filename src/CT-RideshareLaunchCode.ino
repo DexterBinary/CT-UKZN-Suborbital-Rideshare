@@ -25,7 +25,7 @@
 #define I2C_SDA 26
 #define I2C_SCL 27
 
-int threshold = 2.5; // Threshold for the accelerometer to initiate the rest of the script (to stop from reading before the rocket is launched) in g's
+double threshold = 2.5; // Threshold for the accelerometer to initiate the rest of the script (to stop from reading before the rocket is launched) in g's
 bool hasLaunched = false;
 double localPressure = 1017.0; // Local pressure in hPa (Cape Town South Africa)
 String header = "Time,Pressure,Altitude,Temperature,Acell X,Acell Y,Acell Z,"; //Data Points included in the CSV
