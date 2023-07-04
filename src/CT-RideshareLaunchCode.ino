@@ -34,7 +34,7 @@ uint8_t accelRange = 16;     // Accelerometer range = 2, 4, 8, 16g
 
 KXTJ3 myIMU(0x0F); //IMU Address
 
-SPIClass spi = SPIClass(HSPI); //Ima be honest, I have no idea what this does, I just know it's important
+SPIClass spi = SPIClass(HSPI); //Creates an object from class
 
 //append to file
 void write(String path, String data) {
